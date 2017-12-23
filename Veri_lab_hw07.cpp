@@ -167,19 +167,19 @@ void enAzBanknot(int para[], int banknot[]) {
 
 	cout << "ELDEKİ : " << endl;
 	cout << "\t|TL(200)TL|  x" << para[0] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(100)TL|  x" << para[1] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(50)TL|   x" << para[2] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(20)TL|   x" << para[3] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(10)TL|   x" << para[4] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(5)TL|    x" << para[5] << "\t=" << para[0] * banknot[0] << endl << endl << endl;
+	cout << "\t|TL(100)TL|  x" << para[1] << "\t=" << para[1] * banknot[1] << endl;
+	cout << "\t|TL(50)TL|   x" << para[2] << "\t=" << para[2] * banknot[2] << endl;
+	cout << "\t|TL(20)TL|   x" << para[3] << "\t=" << para[3] * banknot[3] << endl;
+	cout << "\t|TL(10)TL|   x" << para[4] << "\t=" << para[4] * banknot[4] << endl;
+	cout << "\t|TL(5)TL|    x" << para[5] << "\t=" << para[5] * banknot[5] << endl << endl << endl;
 
 	cout << "HESAPLANAN :" << endl;
 	cout << "\t|TL(200)TL|  x" << adet[0] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(100)TL|  x" << adet[1] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(50)TL|   x" << adet[2] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(20)TL|   x" << adet[3] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(10)TL|   x" << adet[4] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(5)TL|    x" << adet[5] << "\t=" << adet[0] * banknot[0] << endl << endl << endl;
+	cout << "\t|TL(100)TL|  x" << adet[1] << "\t=" << adet[1] * banknot[1] << endl;
+	cout << "\t|TL(50)TL|   x" << adet[2] << "\t=" << adet[2] * banknot[2] << endl;
+	cout << "\t|TL(20)TL|   x" << adet[3] << "\t=" << adet[3] * banknot[3] << endl;
+	cout << "\t|TL(10)TL|   x" << adet[4] << "\t=" << adet[4] * banknot[4] << endl;
+	cout << "\t|TL(5)TL|    x" << adet[5] << "\t=" << adet[5] * banknot[5] << endl << endl << endl;
 
 	cout << "Ana menüye dönmek için bir tuşa basınız." << endl;
 	_getch();
@@ -228,19 +228,19 @@ void enFazlaBanknot(int para[], int banknot[]) {
 
 	cout << "ELDEKİ : " << endl;
 	cout << "\t|TL(200)TL|  x" << para[0] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(100)TL|  x" << para[1] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(50)TL|   x" << para[2] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(20)TL|   x" << para[3] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(10)TL|   x" << para[4] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(5)TL|    x" << para[5] << "\t=" << para[0] * banknot[0] << endl << endl << endl;
+	cout << "\t|TL(100)TL|  x" << para[1] << "\t=" << para[1] * banknot[1] << endl;
+	cout << "\t|TL(50)TL|   x" << para[2] << "\t=" << para[2] * banknot[2] << endl;
+	cout << "\t|TL(20)TL|   x" << para[3] << "\t=" << para[3] * banknot[3] << endl;
+	cout << "\t|TL(10)TL|   x" << para[4] << "\t=" << para[4] * banknot[4] << endl;
+	cout << "\t|TL(5)TL|    x" << para[5] << "\t=" << para[5] * banknot[5] << endl << endl << endl;
 
 	cout << "HESAPLANAN :" << endl;
 	cout << "\t|TL(200)TL|  x" << adet[0] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(100)TL|  x" << adet[1] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(50)TL|   x" << adet[2] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(20)TL|   x" << adet[3] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(10)TL|   x" << adet[4] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(5)TL|    x" << adet[5] << "\t=" << adet[0] * banknot[0] << endl << endl << endl;
+	cout << "\t|TL(100)TL|  x" << adet[1] << "\t=" << adet[1] * banknot[1] << endl;
+	cout << "\t|TL(50)TL|   x" << adet[2] << "\t=" << adet[2] * banknot[2] << endl;
+	cout << "\t|TL(20)TL|   x" << adet[3] << "\t=" << adet[3] * banknot[3] << endl;
+	cout << "\t|TL(10)TL|   x" << adet[4] << "\t=" << adet[4] * banknot[4] << endl;
+	cout << "\t|TL(5)TL|    x" << adet[5] << "\t=" << adet[5] * banknot[5] << endl << endl << endl;
 
 	cout << "Ana menüye dönmek için bir tuşa basınız." << endl;
 	_getch();
@@ -282,19 +282,19 @@ void enBuyukBanknot(int para[], int banknot[]){
 
 	cout << "ELDEKİ : " << endl;
 	cout << "\t|TL(200)TL|  x" << para[0] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(100)TL|  x" << para[1] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(50)TL|   x" << para[2] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(20)TL|   x" << para[3] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(10)TL|   x" << para[4] << "\t=" << para[0] * banknot[0] << endl;
-	cout << "\t|TL(5)TL|    x" << para[5] << "\t=" << para[0] * banknot[0] << endl << endl << endl;
+	cout << "\t|TL(100)TL|  x" << para[1] << "\t=" << para[1] * banknot[1] << endl;
+	cout << "\t|TL(50)TL|   x" << para[2] << "\t=" << para[2] * banknot[2] << endl;
+	cout << "\t|TL(20)TL|   x" << para[3] << "\t=" << para[3] * banknot[3] << endl;
+	cout << "\t|TL(10)TL|   x" << para[4] << "\t=" << para[4] * banknot[4] << endl;
+	cout << "\t|TL(5)TL|    x" << para[5] << "\t=" << para[5] * banknot[5] << endl << endl << endl;
 
 	cout << "HESAPLANAN :" << endl;
 	cout << "\t|TL(200)TL|  x" << adet[0] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(100)TL|  x" << adet[1] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(50)TL|   x" << adet[2] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(20)TL|   x" << adet[3] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(10)TL|   x" << adet[4] << "\t=" << adet[0] * banknot[0] << endl;
-	cout << "\t|TL(5)TL|    x" << adet[5] << "\t=" << adet[0] * banknot[0] << endl << endl << endl;
+	cout << "\t|TL(100)TL|  x" << adet[1] << "\t=" << adet[1] * banknot[1] << endl;
+	cout << "\t|TL(50)TL|   x" << adet[2] << "\t=" << adet[2] * banknot[2] << endl;
+	cout << "\t|TL(20)TL|   x" << adet[3] << "\t=" << adet[3] * banknot[3] << endl;
+	cout << "\t|TL(10)TL|   x" << adet[4] << "\t=" << adet[4] * banknot[4] << endl;
+	cout << "\t|TL(5)TL|    x" << adet[5] << "\t=" << adet[5] * banknot[5] << endl << endl << endl;
 
 	cout << "Ana menüye dönmek için bir tuşa basınız." << endl;
 	_getch();
