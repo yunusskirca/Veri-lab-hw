@@ -166,20 +166,20 @@ void enAzBanknot(int para[], int banknot[]) {
 	}
 
 	cout << "ELDEKİ : " << endl;
-	cout << "\t|TL(200)TL|  x" << para[0] << endl;
-	cout << "\t|TL(100)TL|  x" << para[1] << endl;
-	cout << "\t|TL(50)TL|   x" << para[2] << endl;
-	cout << "\t|TL(20)TL|   x" << para[3] << endl;
-	cout << "\t|TL(10)TL|   x" << para[4] << endl;
-	cout << "\t|TL(5)TL|    x" << para[5] << endl << endl << endl;
+	cout << "\t|TL(200)TL|  x" << para[0] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(100)TL|  x" << para[1] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(50)TL|   x" << para[2] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(20)TL|   x" << para[3] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(10)TL|   x" << para[4] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(5)TL|    x" << para[5] << para[0] * banknot[0] << endl << endl << endl;
 
 	cout << "HESAPLANAN :" << endl;
-	cout << "\t|TL(200)TL|  x" << adet[0] << endl;
-	cout << "\t|TL(100)TL|  x" << adet[1] << endl;
-	cout << "\t|TL(50)TL|   x" << adet[2] << endl;
-	cout << "\t|TL(20)TL|   x" << adet[3] << endl;
-	cout << "\t|TL(10)TL|   x" << adet[4] << endl;
-	cout << "\t|TL(5)TL|    x" << adet[5] << endl << endl << endl;
+	cout << "\t|TL(200)TL|  x" << adet[0] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(100)TL|  x" << adet[1] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(50)TL|   x" << adet[2] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(20)TL|   x" << adet[3] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(10)TL|   x" << adet[4] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(5)TL|    x" << adet[5] << adet[0] * banknot[0] << endl << endl << endl;
 
 	cout << "Ana menüye dönmek için bir tuşa basınız." << endl;
 	_getch();
@@ -227,20 +227,74 @@ void enFazlaBanknot(int para[], int banknot[]) {
 
 
 	cout << "ELDEKİ : " << endl;
-	cout << "\t|TL(200)TL|  x" << para[0] << endl;
-	cout << "\t|TL(100)TL|  x" << para[1] << endl;
-	cout << "\t|TL(50)TL|   x" << para[2] << endl;
-	cout << "\t|TL(20)TL|   x" << para[3] << endl;
-	cout << "\t|TL(10)TL|   x" << para[4] << endl;
-	cout << "\t|TL(5)TL|    x" << para[5] << endl << endl << endl;
+	cout << "\t|TL(200)TL|  x" << para[0] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(100)TL|  x" << para[1] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(50)TL|   x" << para[2] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(20)TL|   x" << para[3] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(10)TL|   x" << para[4] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(5)TL|    x" << para[5] << para[0] * banknot[0] << endl << endl << endl;
 
 	cout << "HESAPLANAN :" << endl;
-	cout << "\t|TL(200)TL|  x" << adet[0] << endl;
-	cout << "\t|TL(100)TL|  x" << adet[1] << endl;
-	cout << "\t|TL(50)TL|   x" << adet[2] << endl;
-	cout << "\t|TL(20)TL|   x" << adet[3] << endl;
-	cout << "\t|TL(10)TL|   x" << adet[4] << endl;
-	cout << "\t|TL(5)TL|    x" << adet[5] << endl << endl << endl;
+	cout << "\t|TL(200)TL|  x" << adet[0] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(100)TL|  x" << adet[1] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(50)TL|   x" << adet[2] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(20)TL|   x" << adet[3] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(10)TL|   x" << adet[4] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(5)TL|    x" << adet[5] << adet[0] * banknot[0] << endl << endl << endl;
+
+	cout << "Ana menüye dönmek için bir tuşa basınız." << endl;
+	_getch();
+}
+
+void enBuyukBanknot(int para[], int banknot[]){
+	int miktar;
+	int adet[6] = { 0,0,0,0,0,0 };
+	bool flag = false;
+	if (toplam(para, banknot) < 1) {
+		cout << "Elde hiç para yok" << endl;
+		cout << "Ana menüye dönmek için bir tuşa basınız." << endl;
+		_getch();
+		return;
+	}
+	do {
+		system("cls");
+		if (flag) {
+			cout << "Miktar negatif veya eldeki paradan büyük olamaz." << endl;
+		}
+		cout << "Eldeki para : " << toplam(para, banknot) << endl;
+		cout << "Miktar giriniz : ";
+		cin >> miktar;
+		flag = true;
+	} while (toplam(para, banknot) < miktar || miktar < 0);
+
+	system("cls");
+
+	cout << miktar << " TL en fazla banknotla aşağıdaki şekilde hesaplanabilir." << endl << endl;
+
+	for (int i = 0; i < 6;) {
+		if (miktar > 0 && para[i] > adet[i]) {
+			miktar -= banknot[i];
+			adet[i]++;
+		}
+		else
+			i++;
+	}
+
+	cout << "ELDEKİ : " << endl;
+	cout << "\t|TL(200)TL|  x" << para[0] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(100)TL|  x" << para[1] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(50)TL|   x" << para[2] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(20)TL|   x" << para[3] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(10)TL|   x" << para[4] << para[0] * banknot[0] << endl;
+	cout << "\t|TL(5)TL|    x" << para[5] << para[0] * banknot[0] << endl << endl << endl;
+
+	cout << "HESAPLANAN :" << endl;
+	cout << "\t|TL(200)TL|  x" << adet[0] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(100)TL|  x" << adet[1] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(50)TL|   x" << adet[2] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(20)TL|   x" << adet[3] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(10)TL|   x" << adet[4] << adet[0] * banknot[0] << endl;
+	cout << "\t|TL(5)TL|    x" << adet[5] << adet[0] * banknot[0] << endl << endl << endl;
 
 	cout << "Ana menüye dönmek için bir tuşa basınız." << endl;
 	_getch();
@@ -270,6 +324,7 @@ void main() {
 			<< "\t 2- PARA ÇIKAR" << endl
 			<< "\t 3- EN AZ BANKNOT" << endl
 			<< "\t 4- EN FAZLA BANKNOT" << endl
+			<< "\t 5- EN BÜYÜK BANKNOT" << endl
 			<< "\t X- ÇIKIŞ!";
 
 		menu = _getch();
@@ -290,6 +345,10 @@ void main() {
 		else if (menu == '4') {
 			system("cls");
 			enFazlaBanknot(para, banknot);
+		}
+		else if (menu == '5') {
+			system("cls");
+			enBuyukBanknot(para, banknot);
 		}
 
 		else if (menu == 'X' || menu == 'x')
