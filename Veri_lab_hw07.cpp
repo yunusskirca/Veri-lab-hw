@@ -132,11 +132,14 @@ void enAzBanknot(int para[], int banknot[]) {
 
 	system("cls");
 
+	int miktar_t = miktar;
+
 	cout << miktar << " TL en az banknotla aşağıdaki şekilde hesaplanabilir." << endl << endl;
 
 	// -5 beyin yaktı mı ? :D ama doru
 	if (miktar % 5 != 0)
 		miktar -= (miktar % 5) - 5;
+
 	for (int i = 5; i >= 0; i--) {
 		if (para[i] == 0)
 			miktar += banknot[i];
@@ -151,6 +154,15 @@ void enAzBanknot(int para[], int banknot[]) {
 		}
 		else
 			i++;
+	}
+	if (miktar > 0) {
+		for (int i = 0; i < 6; i++)
+			adet[i] = 0;
+		for (int i = 5; i >= 0; i--)
+			if (banknot[i] > miktar_t) {
+				adet[i]++;
+				break;
+			}
 	}
 
 	cout << "ELDEKİ : " << endl;
@@ -199,14 +211,14 @@ void enFazlaBanknot(int para[], int banknot[]) {
 	cout << miktar << " TL en fazla banknotla aşağıdaki şekilde hesaplanabilir." << endl << endl;
 
 	if (miktar % 5 != 0)
-		miktar -= (miktar % 5) - 5;
+		miktar = miktar - (miktar % 5) + 5;
 
 	for (int i = 0; i < 6; i++) 
 		adet[i] = para[i];
 	
 	
 	for (int i = 0; i < 6;) {
-		if (toplam(adet, banknot) > miktar && adet[i] > 0) {
+		if (toplam(adet, banknot) - banknot[i] >= miktar && adet[i] > 0) {
 			adet[i]--;
 		}
 		else
